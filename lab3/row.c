@@ -25,7 +25,7 @@ int getNumberOfPointsInCircle(int numberOfPoints) {
 
 int main(int argc, char **argv) {
     if (argc != 2) {
-        printf("%s", "Wrong argument number, try ./sek <number of points>\n");
+        printf("%s", "Wrong argument number, try ./row <number of points>\n");
         return 1;
     }
     char *ptr;
