@@ -1,0 +1,14 @@
+#!/bin/bash -l
+#SBATCH --nodes 1
+#SBATCH --ntasks 12
+#SBATCH --exclusive
+#SBATCH --time=01:00:00
+#SBATCH --partition=plgrid
+#SBATCH --account=plgusername2020a
+
+module load tools/openmpi/1.6.3-gnu-4.1.2-ib
+module load libs/gmp/5.1.2
+
+cd lab3
+make
+./run.sh
